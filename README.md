@@ -12,7 +12,7 @@ The challenge was to build a random advice generator that fetches data from the 
 
 ### Links
 
-- Live Site URL: [Random Advice Generator]()
+- Live Site URL: [Random Advice Generator](https://advice-generator-app-swart.vercel.app/)
 
 ---
 
@@ -24,7 +24,7 @@ The challenge was to build a random advice generator that fetches data from the 
 
 ### API
 
-The project uses the Advice Slip JSON API to fetch random pieces of advice.
+The project uses the [Advice Slip JSON API](https://api.adviceslip.com/) to fetch random pieces of advice.
 
 ### Acknowledgments
 
