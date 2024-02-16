@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--light-cyan: hsl(193, 38%, 86%);
+	--neon-green: hsl(150, 100%, 66%);
+	--grayish-blue: hsl(217, 19%, 38%);
+	--dark-grayish-blue: hsl(217, 19%, 24%);
+	--dark-blue: hsl(218, 23%, 16%);
+	--font: 'Manrope', sans-serif;
+}
+
+body {
+	background-color: var(--dark-blue);
+	font-family: var(--font);
+	min-height: 100dvh;
+	display: grid;
+	justify-content: center;
+	place-items: center;
+}
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.advice-container {
+	text-align: center;
+	background-color: var(--dark-grayish-blue);
+	padding: 3rem;
+	border-radius: 10px;
+	position: relative;
+}
+#advice-number {
+	font-size: 1rem;
+	color: var(--neon-green);
+}
+#advice {
+	color: var(--light-cyan);
+	font-size: 1.25rem;
+	margin: 0.5rem 0;
+}
+.divider {
+	display: flex;
+	justify-content: center;
+}
+#generate-advice {
+	background-color: var(--neon-green);
+	border: 0;
+	padding: 1.25rem;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+	position: absolute;
+	transform: translate(-50%, 30%);
+	/* top: 70%; */
+}
+
+#generate-advice:hover {
+	filter: drop-shadow(0 0 15px var(--neon-green));
+}
+.blurred {
+	filter: blur(5px);
+}
+
+@media screen and (min-width: 550px) {
+	#advice {
+		font-size: 1.75rem;
+	}
+}

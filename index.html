@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Advice Generator App</title>
+	</head>
+	<body class="blurred">
+		<main>
+			<div class="wrapper">
+				<div class="advice-container">
+					<h1 id="advice-number">ADVICE #117</h1>
+					<p id="advice">
+						"It is easy to sit up and take notice, whta's difficult is getting
+						up and taking action."
+					</p>
+					<div class="divider">
+						<picture>
+							<source
+								media="(min-width: 551px)"
+								srcset="./img/pattern-divider-desktop.svg"
+								sizes="551px"
+							/>
+							<source
+								media="(max-width: 550px)"
+								srcset="./img/pattern-divider-mobile.svg"
+								sizes="550px"
+							/>
+							<img src="./img/pattern-divider-mobile.svg" alt="" />
+						</picture>
+					</div>
+					<button id="generate-advice">
+						<img src="./img/icon-dice.svg" alt="" />
+					</button>
+				</div>
+			</div>
+		</main>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
